@@ -1,9 +1,9 @@
-from openai import OpenAI
+from volcenginesdkarkruntime import Ark
 import os
 from config import Config
 
 # 创建OpenAI客户端实例
-client = OpenAI(
+client = Ark(
     api_key=Config.API_KEY,
     base_url=Config.API_BASE,
 )

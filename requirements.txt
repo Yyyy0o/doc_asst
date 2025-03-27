@@ -1,0 +1,3 @@
+langchain_community==0.3.20
+python-dotenv==1.1.0
+volcengine_python_sdk==1.1.1

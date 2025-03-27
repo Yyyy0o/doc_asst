@@ -1,10 +1,10 @@
 from client import client
 from config import Config
 
-def get_embedding(text: str) -> list:
+def get_embedding(text: str,model=Config.EMBEDING_MODEL) -> list:
     try:
         response = client.embeddings.create(
-            model=Config.EMBEDING_MODEL,
+            model=model,
             input=[text],
             encoding_format="float"
         )
